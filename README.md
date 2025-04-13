@@ -25,6 +25,9 @@ chmod +x q1_a.py
 ```bash
 sudo ./q1_a.py
 ```
+## Q2
+For running 
+sudo python3 nat_topology.py
 
 ## Q3
 Command to run is 
