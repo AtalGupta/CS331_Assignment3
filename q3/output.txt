@@ -1,0 +1,2726 @@
+(base) atal@Ubuntu:~/Desktop/CN/CN Assignment-3$ cd q3
+(base) atal@Ubuntu:~/Desktop/CN/CN Assignment-3/q3$ sudo ./dvrouting 
+[sudo] password for atal: 
+Enter TRACE:2
+rtinit0 called at time 0.000000
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   999
+dest 2|  999     3   999
+     3|  999   999     7
+rtinit1 called at time 0.000000
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    1   999
+dest 2|  999     1
+     3|  999   999
+rtinit1 called at time 0.000000
+             via   
+   D1 |    0     2 
+  ----|-----------
+     0|    3   999
+dest 2|  999   999
+     3|  999   999
+rtinit1 called at time 0.000000
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   999
+dest 1|  999   999
+     2|  999     2
+MAIN: rcv event, t=0.947, at 3 src: 0, dest: 3, contents:   0   1   3   7
+rtupdate0 called at time 0.946640, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   999
+dest 1|    8   999
+     2|   10     2
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=0.992, at 0 src: 1, dest: 0, contents:   1   0   1 999
+rtupdate0 called at time 0.992243, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   999
+dest 2|    2     3   999
+     3|  1000   999     7
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=1.209, at 3 src: 2, dest: 3, contents:   3   1   0   2
+rtupdate0 called at time 1.209223, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     5
+dest 1|    8     3
+     2|   10     2
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=1.276, at 3 src: 0, dest: 3, contents:   0   1   2   7
+rtupdate0 called at time 1.275716, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     5
+dest 1|    8     3
+     2|    9     2
+MAIN: rcv event, t=1.642, at 2 src: 0, dest: 2, contents:   0   1   3   7
+rtupdate0 called at time 1.641910, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   999
+dest 2|  999   999   999
+     3|  999   999     2
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=1.871, at 1 src: 0, dest: 1, contents:   0   1   3   7
+rtupdate0 called at time 1.870574, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   999   999
+dest 2|  999     1   999
+     3|  999   999   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=2.166, at 2 src: 1, dest: 2, contents:   1   0   1 999
+rtupdate0 called at time 2.165707, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   999
+dest 2|    2   999   999
+     3|  1000   999     2
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=2.407, at 0 src: 2, dest: 0, contents:   3   1   0   2
+rtupdate0 called at time 2.406722, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   999
+dest 2|    2     3   999
+     3|  1000     5     7
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=2.421, at 2 src: 3, dest: 2, contents:   7 999   2   0
+rtupdate0 called at time 2.421268, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   1001
+dest 2|    2   999     4
+     3|  1000   999     2
+MAIN: rcv event, t=2.591, at 3 src: 2, dest: 3, contents:   3   1   6   2
+rtupdate0 called at time 2.591294, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7     5
+dest 1|    8     3
+     2|    9     8
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=2.811, at 1 src: 2, dest: 1, contents:   3   1   0   2
+rtupdate0 called at time 2.810933, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999     2   999
+dest 2|  999     1   999
+     3|  999     3   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=3.293, at 2 src: 3, dest: 2, contents:   7   8   2  14
+rtupdate0 called at time 3.292663, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999    10
+dest 2|    2   999     4
+     3|  1000   999    16
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=4.063, at 2 src: 0, dest: 2, contents:   0   1   2   7
+rtupdate0 called at time 4.063167, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999    10
+dest 2|    2   999     4
+     3|  1000   999    16
+MAIN: rcv event, t=4.104, at 0 src: 3, dest: 0, contents:   7 999   2   0
+rtupdate0 called at time 4.103641, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   1006
+dest 2|    2     3     9
+     3|  1000     5     7
+MAIN: rcv event, t=4.169, at 2 src: 3, dest: 2, contents:   7   3   2   4
+rtupdate0 called at time 4.169482, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999    19
+dest 2|    2   999    18
+     3|  1000   999    20
+MAIN: rcv event, t=4.330, at 0 src: 3, dest: 0, contents:   7   8   2  14
+rtupdate0 called at time 4.330418, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    15
+dest 2|    2     3     9
+     3|  1000     5    21
+MAIN: rcv event, t=4.373, at 3 src: 2, dest: 3, contents:   3   1   2   2
+rtupdate0 called at time 4.373219, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    11
+dest 1|    8     9
+     2|    9    10
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=4.643, at 1 src: 0, dest: 1, contents:   0   1   2   7
+rtupdate0 called at time 4.643052, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999     2   999
+dest 2|  999     1   999
+     3|  999     3   999
+MAIN: rcv event, t=5.054, at 3 src: 0, dest: 3, contents:   0   1   2   5
+rtupdate0 called at time 5.054020, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    11
+dest 1|    8     9
+     2|    9    10
+MAIN: rcv event, t=5.213, at 0 src: 3, dest: 0, contents:   7   3   2   4
+rtupdate0 called at time 5.212747, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    24
+dest 2|    2     3    23
+     3|  1000     5    25
+MAIN: rcv event, t=5.502, at 1 src: 2, dest: 1, contents:   3   1   6   2
+rtupdate0 called at time 5.501586, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999     2   999
+dest 2|  999     7   999
+     3|  999     9   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=5.606, at 2 src: 1, dest: 2, contents:   1   2   1   8
+rtupdate0 called at time 5.605686, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    3   999    19
+dest 2|    4   999    18
+     3|   11   999    20
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=6.213, at 1 src: 2, dest: 1, contents:   3   1   2   2
+rtupdate0 called at time 6.213284, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999     8   999
+dest 2|  999     9   999
+     3|  999    11   999
+MAIN: rcv event, t=6.220, at 3 src: 2, dest: 3, contents:   3   1   2  10
+rtupdate0 called at time 6.220469, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    13
+dest 1|    8    11
+     2|    9    12
+MAIN: rcv event, t=6.598, at 1 src: 0, dest: 1, contents:   0   1   2   5
+rtupdate0 called at time 6.597782, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999     8   999
+dest 2|  999     9   999
+     3|  999    11   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=6.776, at 1 src: 2, dest: 1, contents:   3   1   2  10
+rtupdate0 called at time 6.775893, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    10   999
+dest 2|  999    11   999
+     3|  999    21   999
+MAIN: rcv event, t=7.084, at 2 src: 0, dest: 2, contents:   0   1   2   5
+rtupdate0 called at time 7.084473, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    3   999    19
+dest 2|    4   999    18
+     3|   11   999    20
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=7.086, at 0 src: 2, dest: 0, contents:   3   1   6   2
+rtupdate0 called at time 7.085730, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    24
+dest 2|    2     9    23
+     3|  1000    11    25
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=7.412, at 3 src: 2, dest: 3, contents:   3   3   4  10
+rtupdate0 called at time 7.411736, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    15
+dest 1|    8    15
+     2|    9    16
+MAIN: rcv event, t=7.621, at 2 src: 3, dest: 2, contents:   7   3   8  10
+rtupdate0 called at time 7.620674, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    3   999    23
+dest 2|    4   999    28
+     3|   11   999    30
+MAIN: rcv event, t=7.795, at 2 src: 1, dest: 2, contents:   1   2   1   3
+rtupdate0 called at time 7.794879, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    5   999    23
+dest 2|    6   999    28
+     3|    8   999    30
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=7.851, at 1 src: 2, dest: 1, contents:   3   3   4  10
+rtupdate0 called at time 7.850997, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    14   999
+dest 2|  999    15   999
+     3|  999    25   999
+MAIN: rcv event, t=8.263, at 0 src: 1, dest: 0, contents:   1   2   1   8
+rtupdate0 called at time 8.263155, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    3     4    24
+dest 2|    4     9    23
+     3|   11    11    25
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=8.489, at 3 src: 2, dest: 3, contents:   3   3   4   8
+rtupdate0 called at time 8.488553, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    19
+dest 1|    8    19
+     2|    9    20
+MAIN: rcv event, t=9.173, at 2 src: 3, dest: 2, contents:   7   8   9  12
+rtupdate0 called at time 9.173064, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    5   999    38
+dest 2|    6   999    39
+     3|    8   999    42
+MAIN: rcv event, t=9.381, at 0 src: 2, dest: 0, contents:   3   1   2   2
+rtupdate0 called at time 9.380855, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    3    10    24
+dest 2|    4    11    23
+     3|   11    13    25
+MAIN: rcv event, t=9.438, at 3 src: 0, dest: 3, contents:   0   1   2  11
+rtupdate0 called at time 9.438353, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    19
+dest 1|    8    19
+     2|    9    20
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=9.684, at 0 src: 3, dest: 0, contents:   7   3   8  10
+rtupdate0 called at time 9.684485, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    3    10    28
+dest 2|    4    11    33
+     3|   11    13    35
+MAIN: rcv event, t=9.813, at 1 src: 2, dest: 1, contents:   3   3   4   8
+rtupdate0 called at time 9.812768, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    18   999
+dest 2|  999    19   999
+     3|  999    27   999
+MAIN: rcv event, t=9.824, at 3 src: 2, dest: 3, contents:   3   4   5   8
+rtupdate0 called at time 9.824356, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    23
+dest 1|    8    24
+     2|    9    25
+MAIN: rcv event, t=9.881, at 1 src: 0, dest: 1, contents:   0   1   2  11
+rtupdate0 called at time 9.880855, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    18   999
+dest 2|  999    19   999
+     3|  999    27   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=9.992, at 3 src: 0, dest: 3, contents:   0   3   4  11
+rtupdate0 called at time 9.992285, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    23
+dest 1|   10    24
+     2|   11    25
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=10.138, at 2 src: 1, dest: 2, contents:   1   2   3   8
+rtupdate0 called at time 10.137554, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    7   999    38
+dest 2|   10   999    39
+     3|   15   999    42
+MAIN: rcv event, t=10.332, at 2 src: 1, dest: 2, contents:   1   2   3   6
+rtupdate0 called at time 10.332042, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    9   999    38
+dest 2|   12   999    39
+     3|   15   999    42
+MAIN: rcv event, t=10.702, at 0 src: 1, dest: 0, contents:   1   2   1   3
+rtupdate0 called at time 10.701552, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    5    10    28
+dest 2|    6    11    33
+     3|    8    13    35
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=10.898, at 1 src: 2, dest: 1, contents:   3   4   5   8
+rtupdate0 called at time 10.898325, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    23   999
+dest 2|  999    24   999
+     3|  999    32   999
+MAIN: rcv event, t=11.204, at 2 src: 0, dest: 2, contents:   0   1   2  11
+rtupdate0 called at time 11.203568, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    9   999    38
+dest 2|   12   999    39
+     3|   15   999    42
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=12.370, at 2 src: 0, dest: 2, contents:   0   3   4  11
+rtupdate0 called at time 12.370220, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    9   999    38
+dest 2|   12   999    39
+     3|   15   999    42
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=12.531, at 3 src: 0, dest: 3, contents:   0   5   6   8
+rtupdate0 called at time 12.531055, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    23
+dest 1|   12    24
+     2|   13    25
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=12.627, at 1 src: 0, dest: 1, contents:   0   3   4  11
+rtupdate0 called at time 12.627494, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    23   999
+dest 2|  999    24   999
+     3|  999    32   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=12.665, at 0 src: 2, dest: 0, contents:   3   1   2  10
+rtupdate0 called at time 12.665259, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    5    12    28
+dest 2|    6    13    33
+     3|    8    23    35
+MAIN: rcv event, t=13.016, at 2 src: 3, dest: 2, contents:   7   8   9  18
+rtupdate0 called at time 13.015660, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    9   999    50
+dest 2|   12   999    51
+     3|   15   999    60
+MAIN: rcv event, t=13.219, at 1 src: 0, dest: 1, contents:   0   5   6   8
+rtupdate0 called at time 13.218997, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    23   999
+dest 2|  999    24   999
+     3|  999    32   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=13.367, at 0 src: 3, dest: 0, contents:   7   8   9  12
+rtupdate0 called at time 13.367167, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    5    12    43
+dest 2|    6    13    44
+     3|    8    23    47
+MAIN: rcv event, t=13.433, at 2 src: 1, dest: 2, contents:   1   2   3  12
+rtupdate0 called at time 13.432958, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11   999    50
+dest 2|   14   999    51
+     3|   23   999    60
+MAIN: rcv event, t=13.474, at 0 src: 1, dest: 0, contents:   1   2   3   8
+rtupdate0 called at time 13.473973, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    7    12    43
+dest 2|   10    13    44
+     3|   15    23    47
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=13.739, at 3 src: 2, dest: 3, contents:   3   4   5  14
+rtupdate0 called at time 13.738744, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    28
+dest 1|   12    29
+     2|   13    30
+MAIN: rcv event, t=13.836, at 0 src: 2, dest: 0, contents:   3   3   4  10
+rtupdate0 called at time 13.836341, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    7    16    43
+dest 2|   10    17    44
+     3|   15    27    47
+MAIN: rcv event, t=14.022, at 3 src: 2, dest: 3, contents:   3   6   7  14
+rtupdate0 called at time 14.021537, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    33
+dest 1|   12    36
+     2|   13    37
+MAIN: rcv event, t=14.977, at 1 src: 2, dest: 1, contents:   3   4   5  14
+rtupdate0 called at time 14.976949, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    28   999
+dest 2|  999    29   999
+     3|  999    43   999
+MAIN: rcv event, t=15.135, at 3 src: 0, dest: 3, contents:   0   7  10  15
+rtupdate0 called at time 15.135349, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    33
+dest 1|   14    36
+     2|   17    37
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=15.299, at 2 src: 3, dest: 2, contents:   7  10  11  18
+rtupdate0 called at time 15.298754, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11   999    70
+dest 2|   14   999    71
+     3|   23   999    78
+MAIN: rcv event, t=15.783, at 0 src: 1, dest: 0, contents:   1   2   3   6
+rtupdate0 called at time 15.782841, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    9    16    43
+dest 2|   12    17    44
+     3|   15    27    47
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=15.796, at 0 src: 2, dest: 0, contents:   3   3   4   8
+rtupdate0 called at time 15.795834, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    9    20    43
+dest 2|   12    21    44
+     3|   15    29    47
+MAIN: rcv event, t=15.845, at 0 src: 2, dest: 0, contents:   3   4   5   8
+rtupdate0 called at time 15.844786, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    9    25    43
+dest 2|   12    26    44
+     3|   15    34    47
+MAIN: rcv event, t=15.958, at 0 src: 3, dest: 0, contents:   7   8   9  18
+rtupdate0 called at time 15.958452, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    9    25    55
+dest 2|   12    26    56
+     3|   15    34    65
+MAIN: rcv event, t=16.659, at 2 src: 0, dest: 2, contents:   0   5   6   8
+rtupdate0 called at time 16.658504, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11   999    70
+dest 2|   14   999    71
+     3|   23   999    78
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=16.777, at 3 src: 0, dest: 3, contents:   0   9  12  15
+rtupdate0 called at time 16.776752, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    33
+dest 1|   16    36
+     2|   19    37
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=16.807, at 0 src: 1, dest: 0, contents:   1   2   3  12
+rtupdate0 called at time 16.807182, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11    25    55
+dest 2|   14    26    56
+     3|   23    34    65
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=16.842, at 1 src: 2, dest: 1, contents:   3   6   7  14
+rtupdate0 called at time 16.841707, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    35   999
+dest 2|  999    36   999
+     3|  999    50   999
+MAIN: rcv event, t=16.876, at 2 src: 3, dest: 2, contents:   7  12  13  15
+rtupdate0 called at time 16.875919, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11   999    90
+dest 2|   14   999    91
+     3|   23   999    93
+MAIN: rcv event, t=17.298, at 2 src: 1, dest: 2, contents:   1   4   5  12
+rtupdate0 called at time 17.297533, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   15   999    90
+dest 2|   20   999    91
+     3|   27   999    93
+MAIN: rcv event, t=17.540, at 2 src: 1, dest: 2, contents:   1   6   7   9
+rtupdate0 called at time 17.539818, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21   999    90
+dest 2|   28   999    91
+     3|   30   999    93
+MAIN: rcv event, t=17.787, at 2 src: 0, dest: 2, contents:   0   7  10  15
+rtupdate0 called at time 17.787090, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21   999    90
+dest 2|   28   999    91
+     3|   30   999    93
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=17.884, at 3 src: 2, dest: 3, contents:   3   8   9  11
+rtupdate0 called at time 17.884331, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    40
+dest 1|   16    45
+     2|   19    46
+MAIN: rcv event, t=17.989, at 0 src: 3, dest: 0, contents:   7  10  11  18
+rtupdate0 called at time 17.988823, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11    25    75
+dest 2|   14    26    76
+     3|   23    34    83
+MAIN: rcv event, t=18.050, at 0 src: 2, dest: 0, contents:   3   4   5  14
+rtupdate0 called at time 18.050482, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11    30    75
+dest 2|   14    31    76
+     3|   23    45    83
+MAIN: rcv event, t=18.340, at 1 src: 0, dest: 1, contents:   0   7  10  15
+rtupdate0 called at time 18.340137, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    35   999
+dest 2|  999    36   999
+     3|  999    50   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=19.052, at 2 src: 3, dest: 2, contents:   7  14  17  22
+rtupdate0 called at time 19.051834, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21   999   107
+dest 2|   28   999   110
+     3|   30   999   115
+MAIN: rcv event, t=19.077, at 0 src: 2, dest: 0, contents:   3   6   7  14
+rtupdate0 called at time 19.076630, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11    37    75
+dest 2|   14    38    76
+     3|   23    52    83
+MAIN: rcv event, t=19.304, at 0 src: 3, dest: 0, contents:   7  12  13  15
+rtupdate0 called at time 19.303757, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   11    37    95
+dest 2|   14    38    96
+     3|   23    52    98
+MAIN: rcv event, t=19.503, at 1 src: 0, dest: 1, contents:   0   9  12  15
+rtupdate0 called at time 19.502903, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    35   999
+dest 2|  999    36   999
+     3|  999    50   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=19.533, at 0 src: 1, dest: 0, contents:   1   4   5  12
+rtupdate0 called at time 19.533051, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   15    37    95
+dest 2|   20    38    96
+     3|   27    52    98
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=19.601, at 3 src: 0, dest: 3, contents:   0  11  14  23
+rtupdate0 called at time 19.601019, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    40
+dest 1|   18    45
+     2|   21    46
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=19.712, at 0 src: 1, dest: 0, contents:   1   6   7   9
+rtupdate0 called at time 19.712236, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21    37    95
+dest 2|   28    38    96
+     3|   30    52    98
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=19.832, at 1 src: 2, dest: 1, contents:   3   8   9  11
+rtupdate0 called at time 19.832319, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    44   999
+dest 2|  999    45   999
+     3|  999    56   999
+MAIN: rcv event, t=19.886, at 2 src: 0, dest: 2, contents:   0   9  12  15
+rtupdate0 called at time 19.886068, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21   999   107
+dest 2|   28   999   110
+     3|   30   999   115
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=20.160, at 0 src: 3, dest: 0, contents:   7  14  17  22
+rtupdate0 called at time 20.160467, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21    37   112
+dest 2|   28    38   115
+     3|   30    52   120
+MAIN: rcv event, t=21.147, at 3 src: 2, dest: 3, contents:   3  10  13  18
+rtupdate0 called at time 21.147211, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    49
+dest 1|   18    56
+     2|   21    59
+MAIN: rcv event, t=21.163, at 0 src: 2, dest: 0, contents:   3   8   9  11
+rtupdate0 called at time 21.162630, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21    46   112
+dest 2|   28    47   115
+     3|   30    58   120
+MAIN: rcv event, t=21.357, at 1 src: 0, dest: 1, contents:   0  11  14  23
+rtupdate0 called at time 21.357195, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    44   999
+dest 2|  999    45   999
+     3|  999    56   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=21.474, at 1 src: 2, dest: 1, contents:   3  10  13  18
+rtupdate0 called at time 21.473574, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    55   999
+dest 2|  999    58   999
+     3|  999    76   999
+MAIN: rcv event, t=21.737, at 2 src: 3, dest: 2, contents:   7  16  19  22
+rtupdate0 called at time 21.736961, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21   999   131
+dest 2|   28   999   134
+     3|   30   999   137
+MAIN: rcv event, t=21.893, at 2 src: 0, dest: 2, contents:   0  11  14  23
+rtupdate0 called at time 21.893457, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21   999   131
+dest 2|   28   999   134
+     3|   30   999   137
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=22.078, at 1 src: 0, dest: 1, contents:   0  15  20  27
+rtupdate0 called at time 22.077627, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    55   999
+dest 2|  999    58   999
+     3|  999    76   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=22.137, at 0 src: 3, dest: 0, contents:   7  16  19  22
+rtupdate0 called at time 22.137487, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21    46   136
+dest 2|   28    47   139
+     3|   30    58   142
+MAIN: rcv event, t=22.465, at 1 src: 0, dest: 1, contents:   0  21  28  30
+rtupdate0 called at time 22.465458, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    55   999
+dest 2|  999    58   999
+     3|  999    76   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=23.113, at 3 src: 0, dest: 3, contents:   0  15  20  27
+rtupdate0 called at time 23.113428, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    49
+dest 1|   22    56
+     2|   27    59
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=23.471, at 2 src: 1, dest: 2, contents:   1   8  11  16
+rtupdate0 called at time 23.471363, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   29   999   131
+dest 2|   40   999   134
+     3|   45   999   137
+MAIN: rcv event, t=23.654, at 0 src: 2, dest: 0, contents:   3  10  13  18
+rtupdate0 called at time 23.653734, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   21    57   136
+dest 2|   28    60   139
+     3|   30    78   142
+MAIN: rcv event, t=24.352, at 1 src: 2, dest: 1, contents:   3  12  15  18
+rtupdate0 called at time 24.351721, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    70   999
+dest 2|  999    73   999
+     3|  999    91   999
+MAIN: rcv event, t=24.622, at 3 src: 0, dest: 3, contents:   0  21  28  30
+rtupdate0 called at time 24.621679, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    49
+dest 1|   28    56
+     2|   35    59
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=25.210, at 2 src: 1, dest: 2, contents:   1  10  13  16
+rtupdate0 called at time 25.210453, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   39   999   131
+dest 2|   52   999   134
+     3|   55   999   137
+MAIN: rcv event, t=25.244, at 3 src: 2, dest: 3, contents:   3  12  15  18
+rtupdate0 called at time 25.243742, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    62
+dest 1|   28    71
+     2|   35    74
+MAIN: rcv event, t=25.528, at 0 src: 1, dest: 0, contents:   1   8  11  16
+rtupdate0 called at time 25.528065, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   29    57   136
+dest 2|   40    60   139
+     3|   45    78   142
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=26.137, at 1 src: 2, dest: 1, contents:   3  14  17  26
+rtupdate0 called at time 26.136549, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    87   999
+dest 2|  999    90   999
+     3|  999   116   999
+MAIN: rcv event, t=26.247, at 2 src: 0, dest: 2, contents:   0  15  20  27
+rtupdate0 called at time 26.247126, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   39   999   131
+dest 2|   52   999   134
+     3|   55   999   137
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=26.282, at 0 src: 1, dest: 0, contents:   1  10  13  16
+rtupdate0 called at time 26.281944, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   39    57   136
+dest 2|   52    60   139
+     3|   55    78   142
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=26.392, at 1 src: 0, dest: 1, contents:   0  29  40  45
+rtupdate0 called at time 26.391968, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999    87   999
+dest 2|  999    90   999
+     3|  999   116   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=26.522, at 1 src: 2, dest: 1, contents:   3  18  23  30
+rtupdate0 called at time 26.521717, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   108   999
+dest 2|  999   113   999
+     3|  999   143   999
+MAIN: rcv event, t=26.750, at 3 src: 2, dest: 3, contents:   3  14  17  26
+rtupdate0 called at time 26.750326, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    77
+dest 1|   28    88
+     2|   35    91
+MAIN: rcv event, t=27.103, at 0 src: 3, dest: 0, contents:   7  18  21  30
+rtupdate0 called at time 27.103415, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   39    57   160
+dest 2|   52    60   163
+     3|   55    78   172
+MAIN: rcv event, t=27.513, at 2 src: 3, dest: 2, contents:   7  18  21  30
+rtupdate0 called at time 27.513092, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   39   999   155
+dest 2|   52   999   158
+     3|   55   999   167
+MAIN: rcv event, t=28.035, at 3 src: 0, dest: 3, contents:   0  29  40  45
+rtupdate0 called at time 28.034988, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    77
+dest 1|   36    88
+     2|   47    91
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=28.074, at 3 src: 2, dest: 3, contents:   3  18  23  30
+rtupdate0 called at time 28.073532, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    94
+dest 1|   36   109
+     2|   47   114
+MAIN: rcv event, t=28.351, at 0 src: 2, dest: 0, contents:   3  12  15  18
+rtupdate0 called at time 28.351343, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   39    72   160
+dest 2|   52    75   163
+     3|   55    93   172
+MAIN: rcv event, t=28.391, at 1 src: 0, dest: 1, contents:   0  39  52  55
+rtupdate0 called at time 28.390556, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   108   999
+dest 2|  999   113   999
+     3|  999   143   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=28.514, at 2 src: 0, dest: 2, contents:   0  21  28  30
+rtupdate0 called at time 28.513748, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   39   999   155
+dest 2|   52   999   158
+     3|   55   999   167
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=28.623, at 1 src: 2, dest: 1, contents:   3  24  31  33
+rtupdate0 called at time 28.622896, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   137   999
+dest 2|  999   144   999
+     3|  999   177   999
+MAIN: rcv event, t=28.686, at 0 src: 1, dest: 0, contents:   1  12  15  24
+rtupdate0 called at time 28.685837, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   51    72   160
+dest 2|   66    75   163
+     3|   75    93   172
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=29.026, at 2 src: 1, dest: 2, contents:   1  12  15  24
+rtupdate0 called at time 29.026421, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   51   999   155
+dest 2|   66   999   158
+     3|   75   999   167
+MAIN: rcv event, t=29.129, at 1 src: 0, dest: 1, contents:   0  51  66  75
+rtupdate0 called at time 29.129478, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   137   999
+dest 2|  999   144   999
+     3|  999   177   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=29.149, at 3 src: 0, dest: 3, contents:   0  39  52  55
+rtupdate0 called at time 29.148748, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7    94
+dest 1|   46   109
+     2|   59   114
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=29.197, at 2 src: 1, dest: 2, contents:   1  16  21  28
+rtupdate0 called at time 29.197311, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   67   999   155
+dest 2|   88   999   158
+     3|   95   999   167
+MAIN: rcv event, t=29.620, at 3 src: 2, dest: 3, contents:   3  24  31  33
+rtupdate0 called at time 29.620245, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   117
+dest 1|   46   138
+     2|   59   145
+MAIN: rcv event, t=29.855, at 0 src: 2, dest: 0, contents:   3  14  17  26
+rtupdate0 called at time 29.854565, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   51    89   160
+dest 2|   66    92   163
+     3|   75   118   172
+MAIN: rcv event, t=29.877, at 3 src: 0, dest: 3, contents:   0  51  66  75
+rtupdate0 called at time 29.876570, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   117
+dest 1|   58   138
+     2|   73   145
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=29.969, at 0 src: 1, dest: 0, contents:   1  16  21  28
+rtupdate0 called at time 29.968809, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   67    89   160
+dest 2|   88    92   163
+     3|   95   118   172
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=30.286, at 2 src: 1, dest: 2, contents:   1  22  29  31
+rtupdate0 called at time 30.286413, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89   999   155
+dest 2|  118   999   158
+     3|  120   999   167
+MAIN: rcv event, t=30.425, at 2 src: 3, dest: 2, contents:   7  22  27  34
+rtupdate0 called at time 30.425451, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89   999   189
+dest 2|  118   999   194
+     3|  120   999   201
+MAIN: rcv event, t=30.583, at 0 src: 1, dest: 0, contents:   1  22  29  31
+rtupdate0 called at time 30.582972, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89    89   160
+dest 2|  118    92   163
+     3|  120   118   172
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=30.605, at 0 src: 3, dest: 0, contents:   7  22  27  34
+rtupdate0 called at time 30.604755, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89    89   194
+dest 2|  118    92   199
+     3|  120   118   206
+MAIN: rcv event, t=30.674, at 3 src: 0, dest: 3, contents:   0  67  88  95
+rtupdate0 called at time 30.674078, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   117
+dest 1|   74   138
+     2|   95   145
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=31.774, at 1 src: 0, dest: 1, contents:   0  67  88  95
+rtupdate0 called at time 31.773851, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   137   999
+dest 2|  999   144   999
+     3|  999   177   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=31.850, at 0 src: 3, dest: 0, contents:   7  28  35  37
+rtupdate0 called at time 31.850353, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89    89   234
+dest 2|  118    92   241
+     3|  120   118   243
+MAIN: rcv event, t=32.141, at 3 src: 0, dest: 3, contents:   0  89  92 118
+rtupdate0 called at time 32.141193, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   117
+dest 1|   96   138
+     2|   99   145
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=32.164, at 2 src: 3, dest: 2, contents:   7  28  35  37
+rtupdate0 called at time 32.163921, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89   999   229
+dest 2|  118   999   236
+     3|  120   999   238
+MAIN: rcv event, t=32.190, at 0 src: 2, dest: 0, contents:   3  18  23  30
+rtupdate0 called at time 32.190105, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89   110   234
+dest 2|  118   115   241
+     3|  120   145   243
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=32.706, at 3 src: 0, dest: 3, contents:   0  89 115 120
+rtupdate0 called at time 32.706051, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   117
+dest 1|   96   138
+     2|  122   145
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=32.926, at 2 src: 0, dest: 2, contents:   0  29  40  45
+rtupdate0 called at time 32.925766, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89   999   229
+dest 2|  118   999   236
+     3|  120   999   238
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=33.317, at 1 src: 0, dest: 1, contents:   0  89  92 118
+rtupdate0 called at time 33.317368, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   137   999
+dest 2|  999   144   999
+     3|  999   177   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=33.870, at 2 src: 0, dest: 2, contents:   0  39  52  55
+rtupdate0 called at time 33.869572, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   89   999   229
+dest 2|  118   999   236
+     3|  120   999   238
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=34.025, at 0 src: 1, dest: 0, contents:   1  30  41  46
+rtupdate0 called at time 34.025162, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  119   110   234
+dest 2|  160   115   241
+     3|  165   145   243
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=34.133, at 3 src: 2, dest: 3, contents:   3  32  43  48
+rtupdate0 called at time 34.133179, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   148
+dest 1|   96   177
+     2|  122   188
+MAIN: rcv event, t=34.366, at 0 src: 3, dest: 0, contents:   7  36  47  52
+rtupdate0 called at time 34.366344, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  119   110   279
+dest 2|  160   115   290
+     3|  165   145   295
+MAIN: rcv event, t=34.994, at 3 src: 2, dest: 3, contents:   3  42  55  58
+rtupdate0 called at time 34.993549, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   191
+dest 1|   96   230
+     2|  122   243
+MAIN: rcv event, t=35.132, at 0 src: 1, dest: 0, contents:   1  40  53  56
+rtupdate0 called at time 35.132278, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  159   110   279
+dest 2|  212   115   290
+     3|  215   145   295
+MAIN: rcv event, t=35.146, at 0 src: 2, dest: 0, contents:   3  24  31  33
+rtupdate0 called at time 35.146141, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  159   139   279
+dest 2|  212   146   290
+     3|  215   179   295
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=35.259, at 1 src: 0, dest: 1, contents:   0  89 115 120
+rtupdate0 called at time 35.259304, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   137   999
+dest 2|  999   144   999
+     3|  999   177   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=35.635, at 2 src: 1, dest: 2, contents:   1  30  41  46
+rtupdate0 called at time 35.634846, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  119   999   229
+dest 2|  160   999   236
+     3|  165   999   238
+MAIN: rcv event, t=35.858, at 2 src: 3, dest: 2, contents:   7  36  47  52
+rtupdate0 called at time 35.857731, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  119   999   274
+dest 2|  160   999   285
+     3|  165   999   290
+MAIN: rcv event, t=36.224, at 3 src: 0, dest: 3, contents:   0 110 115 145
+rtupdate0 called at time 36.224491, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   191
+dest 1|  117   230
+     2|  122   243
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=36.541, at 1 src: 2, dest: 1, contents:   3  32  43  48
+rtupdate0 called at time 36.541183, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   176   999
+dest 2|  999   187   999
+     3|  999   235   999
+MAIN: rcv event, t=36.759, at 0 src: 1, dest: 0, contents:   1  52  67  76
+rtupdate0 called at time 36.758511, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   139   279
+dest 2|  278   146   290
+     3|  287   179   295
+MAIN: rcv event, t=36.915, at 3 src: 0, dest: 3, contents:   0 139 146 179
+rtupdate0 called at time 36.915100, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   191
+dest 1|  146   230
+     2|  153   243
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=37.129, at 0 src: 3, dest: 0, contents:   7  46  59  62
+rtupdate0 called at time 37.129078, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   139   341
+dest 2|  278   146   354
+     3|  287   179   357
+MAIN: rcv event, t=37.707, at 2 src: 1, dest: 2, contents:   1  40  53  56
+rtupdate0 called at time 37.707165, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  159   999   274
+dest 2|  212   999   285
+     3|  215   999   290
+MAIN: rcv event, t=37.776, at 0 src: 3, dest: 0, contents:   7  58  73  82
+rtupdate0 called at time 37.776360, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   139   415
+dest 2|  278   146   430
+     3|  287   179   439
+MAIN: rcv event, t=38.192, at 1 src: 2, dest: 1, contents:   3  42  55  58
+rtupdate0 called at time 38.192238, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   229   999
+dest 2|  999   242   999
+     3|  999   300   999
+MAIN: rcv event, t=38.234, at 2 src: 0, dest: 2, contents:   0  51  66  75
+rtupdate0 called at time 38.233700, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  159   999   274
+dest 2|  212   999   285
+     3|  215   999   290
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=38.267, at 2 src: 1, dest: 2, contents:   1  52  67  76
+rtupdate0 called at time 38.266819, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   999   274
+dest 2|  278   999   285
+     3|  287   999   290
+MAIN: rcv event, t=38.605, at 0 src: 3, dest: 0, contents:   7  74  95 102
+rtupdate0 called at time 38.604538, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   139   513
+dest 2|  278   146   534
+     3|  287   179   541
+MAIN: rcv event, t=38.904, at 3 src: 2, dest: 3, contents:   3  54  69  78
+rtupdate0 called at time 38.903557, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   246
+dest 1|  146   297
+     2|  153   312
+MAIN: rcv event, t=39.456, at 1 src: 0, dest: 1, contents:   0 110 115 145
+rtupdate0 called at time 39.455662, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   229   999
+dest 2|  999   242   999
+     3|  999   300   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=40.050, at 2 src: 3, dest: 2, contents:   7  46  59  62
+rtupdate0 called at time 40.050079, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   999   336
+dest 2|  278   999   349
+     3|  287   999   352
+MAIN: rcv event, t=40.411, at 0 src: 1, dest: 0, contents:   1  68  89  96
+rtupdate0 called at time 40.411404, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  279   139   513
+dest 2|  368   146   534
+     3|  375   179   541
+MAIN: rcv event, t=40.502, at 1 src: 0, dest: 1, contents:   0 139 146 179
+rtupdate0 called at time 40.502346, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   229   999
+dest 2|  999   242   999
+     3|  999   300   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=41.452, at 0 src: 3, dest: 0, contents:   7  96  99 125
+rtupdate0 called at time 41.451729, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  279   139   637
+dest 2|  368   146   640
+     3|  375   179   666
+MAIN: rcv event, t=41.510, at 2 src: 3, dest: 2, contents:   7  58  73  82
+rtupdate0 called at time 41.509750, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   999   410
+dest 2|  278   999   425
+     3|  287   999   434
+MAIN: rcv event, t=41.726, at 1 src: 2, dest: 1, contents:   3  54  69  78
+rtupdate0 called at time 41.725765, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   296   999
+dest 2|  999   311   999
+     3|  999   389   999
+MAIN: rcv event, t=41.735, at 0 src: 3, dest: 0, contents:   7  96 122 127
+rtupdate0 called at time 41.734848, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  279   139   762
+dest 2|  368   146   788
+     3|  375   179   793
+MAIN: rcv event, t=41.867, at 0 src: 2, dest: 0, contents:   3  32  43  48
+rtupdate0 called at time 41.867397, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  279   178   762
+dest 2|  368   189   788
+     3|  375   237   793
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=42.183, at 3 src: 0, dest: 3, contents:   0 178 189 237
+rtupdate0 called at time 42.182590, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   246
+dest 1|  185   297
+     2|  196   312
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=42.296, at 2 src: 0, dest: 2, contents:   0  67  88  95
+rtupdate0 called at time 42.296070, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   999   410
+dest 2|  278   999   425
+     3|  287   999   434
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=42.810, at 3 src: 2, dest: 3, contents:   3  70  91  98
+rtupdate0 called at time 42.810165, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   315
+dest 1|  185   382
+     2|  196   403
+MAIN: rcv event, t=43.163, at 0 src: 1, dest: 0, contents:   1  90  93 119
+rtupdate0 called at time 43.163139, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  369   178   762
+dest 2|  462   189   788
+     3|  488   237   793
+MAIN: rcv event, t=43.285, at 1 src: 0, dest: 1, contents:   0 178 189 237
+rtupdate0 called at time 43.285316, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   296   999
+dest 2|  999   311   999
+     3|  999   389   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=43.338, at 2 src: 0, dest: 2, contents:   0  89  92 118
+rtupdate0 called at time 43.337807, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   999   410
+dest 2|  278   999   425
+     3|  287   999   434
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=43.733, at 1 src: 2, dest: 1, contents:   3  70  91  98
+rtupdate0 called at time 43.733059, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   381   999
+dest 2|  999   402   999
+     3|  999   500   999
+MAIN: rcv event, t=43.976, at 3 src: 2, dest: 3, contents:   3  92  95 121
+rtupdate0 called at time 43.975883, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   406
+dest 1|  185   495
+     2|  196   498
+MAIN: rcv event, t=44.069, at 1 src: 2, dest: 1, contents:   3  92  95 121
+rtupdate0 called at time 44.069427, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   494   999
+dest 2|  999   497   999
+     3|  999   618   999
+MAIN: rcv event, t=44.509, at 2 src: 3, dest: 2, contents:   7  74  95 102
+rtupdate0 called at time 44.509293, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  211   999   508
+dest 2|  278   999   529
+     3|  287   999   536
+MAIN: rcv event, t=44.985, at 0 src: 2, dest: 0, contents:   3  42  55  58
+rtupdate0 called at time 44.985413, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  369   231   762
+dest 2|  462   244   788
+     3|  488   302   793
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=45.177, at 1 src: 0, dest: 1, contents:   0 231 244 302
+rtupdate0 called at time 45.177174, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   494   999
+dest 2|  999   497   999
+     3|  999   618   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=45.376, at 2 src: 1, dest: 2, contents:   1  68  89  96
+rtupdate0 called at time 45.376011, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  279   999   508
+dest 2|  368   999   529
+     3|  375   999   536
+MAIN: rcv event, t=45.837, at 0 src: 1, dest: 0, contents:   1  90 116 121
+rtupdate0 called at time 45.837139, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  459   231   762
+dest 2|  575   244   788
+     3|  580   302   793
+MAIN: rcv event, t=46.127, at 2 src: 3, dest: 2, contents:   7  96  99 125
+rtupdate0 called at time 46.126682, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  279   999   632
+dest 2|  368   999   635
+     3|  375   999   661
+MAIN: rcv event, t=46.670, at 3 src: 0, dest: 3, contents:   0 231 244 302
+rtupdate0 called at time 46.670174, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   406
+dest 1|  238   495
+     2|  251   498
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=47.002, at 2 src: 0, dest: 2, contents:   0  89 115 120
+rtupdate0 called at time 47.002060, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  279   999   632
+dest 2|  368   999   635
+     3|  375   999   661
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=47.233, at 0 src: 3, dest: 0, contents:   7 117 122 152
+rtupdate0 called at time 47.233017, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  459   231   910
+dest 2|  575   244   915
+     3|  580   302   945
+MAIN: rcv event, t=47.316, at 3 src: 2, dest: 3, contents:   3  92 118 123
+rtupdate0 called at time 47.316219, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   501
+dest 1|  238   590
+     2|  251   616
+MAIN: rcv event, t=47.564, at 0 src: 3, dest: 0, contents:   7 146 153 186
+rtupdate0 called at time 47.563747, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  459   231   1091
+dest 2|  575   244   1098
+     3|  580   302   1131
+MAIN: rcv event, t=48.100, at 2 src: 3, dest: 2, contents:   7  96 122 127
+rtupdate0 called at time 48.100327, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  279   999   757
+dest 2|  368   999   783
+     3|  375   999   788
+MAIN: rcv event, t=48.232, at 1 src: 2, dest: 1, contents:   3  92 118 123
+rtupdate0 called at time 48.231651, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   589   999
+dest 2|  999   615   999
+     3|  999   738   999
+MAIN: rcv event, t=48.704, at 2 src: 1, dest: 2, contents:   1  90  93 119
+rtupdate0 called at time 48.704372, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  369   999   757
+dest 2|  462   999   783
+     3|  488   999   788
+MAIN: rcv event, t=49.066, at 0 src: 2, dest: 0, contents:   3  54  69  78
+rtupdate0 called at time 49.065964, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  459   298   1091
+dest 2|  575   313   1098
+     3|  580   391   1131
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=49.156, at 0 src: 1, dest: 0, contents:   1 111 116 146
+rtupdate0 called at time 49.156101, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  570   298   1091
+dest 2|  686   313   1098
+     3|  716   391   1131
+MAIN: rcv event, t=49.159, at 1 src: 0, dest: 1, contents:   0 298 313 391
+rtupdate0 called at time 49.158546, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   589   999
+dest 2|  999   615   999
+     3|  999   738   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=50.560, at 2 src: 0, dest: 2, contents:   0 110 115 145
+rtupdate0 called at time 50.559765, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  369   999   757
+dest 2|  462   999   783
+     3|  488   999   788
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=50.577, at 0 src: 1, dest: 0, contents:   1 140 147 180
+rtupdate0 called at time 50.576630, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  710   298   1091
+dest 2|  857   313   1098
+     3|  890   391   1131
+MAIN: rcv event, t=50.882, at 3 src: 0, dest: 3, contents:   0 298 313 391
+rtupdate0 called at time 50.882343, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   501
+dest 1|  305   590
+     2|  320   616
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=50.919, at 1 src: 2, dest: 1, contents:   3 113 118 148
+rtupdate0 called at time 50.918686, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   728   999
+dest 2|  999   733   999
+     3|  999   881   999
+MAIN: rcv event, t=51.062, at 2 src: 0, dest: 2, contents:   0 139 146 179
+rtupdate0 called at time 51.062439, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  369   999   757
+dest 2|  462   999   783
+     3|  488   999   788
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=51.093, at 0 src: 3, dest: 0, contents:   7 185 196 244
+rtupdate0 called at time 51.092815, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  710   298   1316
+dest 2|  857   313   1327
+     3|  890   391   1375
+MAIN: rcv event, t=51.160, at 3 src: 2, dest: 3, contents:   3 113 118 148
+rtupdate0 called at time 51.159698, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   619
+dest 1|  305   729
+     2|  320   734
+MAIN: rcv event, t=51.655, at 1 src: 2, dest: 1, contents:   3 142 149 182
+rtupdate0 called at time 51.654987, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   875   999
+dest 2|  999   882   999
+     3|  999   1064   999
+MAIN: rcv event, t=52.351, at 2 src: 1, dest: 2, contents:   1  90 116 121
+rtupdate0 called at time 52.351433, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  459   999   757
+dest 2|  575   999   783
+     3|  580   999   788
+MAIN: rcv event, t=52.497, at 3 src: 2, dest: 3, contents:   3 142 149 182
+rtupdate0 called at time 52.497498, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   737
+dest 1|  305   876
+     2|  320   883
+MAIN: rcv event, t=52.747, at 2 src: 3, dest: 2, contents:   7 117 122 152
+rtupdate0 called at time 52.746674, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  459   999   905
+dest 2|  575   999   910
+     3|  580   999   940
+MAIN: rcv event, t=52.816, at 0 src: 2, dest: 0, contents:   3  70  91  98
+rtupdate0 called at time 52.816414, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  710   383   1316
+dest 2|  857   404   1327
+     3|  890   502   1375
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=53.610, at 2 src: 3, dest: 2, contents:   7 146 153 186
+rtupdate0 called at time 53.609665, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  459   999   1086
+dest 2|  575   999   1093
+     3|  580   999   1126
+MAIN: rcv event, t=53.857, at 1 src: 0, dest: 1, contents:   0 383 404 502
+rtupdate0 called at time 53.856705, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   875   999
+dest 2|  999   882   999
+     3|  999   1064   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=53.868, at 0 src: 1, dest: 0, contents:   1 179 190 238
+rtupdate0 called at time 53.868202, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  889   383   1316
+dest 2|  1079   404   1327
+     3|  1127   502   1375
+MAIN: rcv event, t=54.152, at 2 src: 1, dest: 2, contents:   1 111 116 146
+rtupdate0 called at time 54.152206, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  570   999   1086
+dest 2|  686   999   1093
+     3|  716   999   1126
+MAIN: rcv event, t=54.184, at 2 src: 1, dest: 2, contents:   1 140 147 180
+rtupdate0 called at time 54.184280, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  710   999   1086
+dest 2|  857   999   1093
+     3|  890   999   1126
+MAIN: rcv event, t=54.668, at 3 src: 0, dest: 3, contents:   0 383 404 502
+rtupdate0 called at time 54.668308, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   737
+dest 1|  390   876
+     2|  411   883
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=55.780, at 0 src: 2, dest: 0, contents:   3  92  95 121
+rtupdate0 called at time 55.780365, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  889   496   1316
+dest 2|  1079   499   1327
+     3|  1127   620   1375
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=55.810, at 1 src: 0, dest: 1, contents:   0 496 499 620
+rtupdate0 called at time 55.809719, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   875   999
+dest 2|  999   882   999
+     3|  999   1064   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=56.121, at 2 src: 0, dest: 2, contents:   0 178 189 237
+rtupdate0 called at time 56.120754, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  710   999   1086
+dest 2|  857   999   1093
+     3|  890   999   1126
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=56.475, at 0 src: 1, dest: 0, contents:   1 232 245 303
+rtupdate0 called at time 56.474800, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1121   496   1316
+dest 2|  1366   499   1327
+     3|  1424   620   1375
+MAIN: rcv event, t=56.928, at 3 src: 0, dest: 3, contents:   0 496 499 620
+rtupdate0 called at time 56.927708, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   737
+dest 1|  503   876
+     2|  506   883
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=57.011, at 0 src: 3, dest: 0, contents:   7 238 251 309
+rtupdate0 called at time 57.011288, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1121   496   1613
+dest 2|  1366   499   1626
+     3|  1424   620   1684
+MAIN: rcv event, t=57.102, at 1 src: 2, dest: 1, contents:   3 181 192 240
+rtupdate0 called at time 57.101810, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   1063   999
+dest 2|  999   1074   999
+     3|  999   1314   999
+MAIN: rcv event, t=57.339, at 2 src: 3, dest: 2, contents:   7 185 196 244
+rtupdate0 called at time 57.339108, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  710   999   1311
+dest 2|  857   999   1322
+     3|  890   999   1370
+MAIN: rcv event, t=57.943, at 0 src: 2, dest: 0, contents:   3  92 118 123
+rtupdate0 called at time 57.943016, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1121   591   1613
+dest 2|  1366   617   1626
+     3|  1424   740   1684
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=57.986, at 3 src: 2, dest: 3, contents:   3 181 192 240
+rtupdate0 called at time 57.985603, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   886
+dest 1|  503   1064
+     2|  506   1075
+MAIN: rcv event, t=58.705, at 0 src: 1, dest: 0, contents:   1 299 314 392
+rtupdate0 called at time 58.705460, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1420   591   1613
+dest 2|  1734   617   1626
+     3|  1812   740   1684
+MAIN: rcv event, t=58.714, at 2 src: 1, dest: 2, contents:   1 179 190 238
+rtupdate0 called at time 58.713760, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  889   999   1311
+dest 2|  1079   999   1322
+     3|  1127   999   1370
+MAIN: rcv event, t=58.888, at 0 src: 2, dest: 0, contents:   3 113 118 148
+rtupdate0 called at time 58.888432, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1420   730   1613
+dest 2|  1734   735   1626
+     3|  1812   883   1684
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=59.315, at 1 src: 0, dest: 1, contents:   0 591 617 740
+rtupdate0 called at time 59.315071, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   1063   999
+dest 2|  999   1074   999
+     3|  999   1314   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=59.323, at 3 src: 0, dest: 3, contents:   0 591 617 740
+rtupdate0 called at time 59.323074, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   886
+dest 1|  598   1064
+     2|  624   1075
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=59.857, at 2 src: 0, dest: 2, contents:   0 231 244 302
+rtupdate0 called at time 59.856861, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  889   999   1311
+dest 2|  1079   999   1322
+     3|  1127   999   1370
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=60.504, at 1 src: 0, dest: 1, contents:   0 730 735 883
+rtupdate0 called at time 60.503506, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   1063   999
+dest 2|  999   1074   999
+     3|  999   1314   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=60.665, at 0 src: 3, dest: 0, contents:   7 305 320 398
+rtupdate0 called at time 60.665272, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1420   730   1989
+dest 2|  1734   735   2004
+     3|  1812   883   2082
+MAIN: rcv event, t=60.906, at 3 src: 0, dest: 3, contents:   0 730 735 883
+rtupdate0 called at time 60.905827, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   886
+dest 1|  737   1064
+     2|  742   1075
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=60.958, at 0 src: 2, dest: 0, contents:   3 142 149 182
+rtupdate0 called at time 60.958298, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1420   877   1989
+dest 2|  1734   884   2004
+     3|  1812   1066   2082
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=61.050, at 0 src: 1, dest: 0, contents:   1 384 405 503
+rtupdate0 called at time 61.050377, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1804   877   1989
+dest 2|  2209   884   2004
+     3|  2307   1066   2082
+MAIN: rcv event, t=61.239, at 0 src: 3, dest: 0, contents:   7 390 411 509
+rtupdate0 called at time 61.238644, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1804   877   2472
+dest 2|  2209   884   2493
+     3|  2307   1066   2591
+MAIN: rcv event, t=61.691, at 2 src: 1, dest: 2, contents:   1 232 245 303
+rtupdate0 called at time 61.690575, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1121   999   1311
+dest 2|  1366   999   1322
+     3|  1424   999   1370
+MAIN: rcv event, t=61.872, at 1 src: 2, dest: 1, contents:   3 234 247 305
+rtupdate0 called at time 61.871597, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   1308   999
+dest 2|  999   1321   999
+     3|  999   1626   999
+MAIN: rcv event, t=62.523, at 3 src: 2, dest: 3, contents:   3 234 247 305
+rtupdate0 called at time 62.523045, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   1078
+dest 1|  737   1309
+     2|  742   1322
+MAIN: rcv event, t=62.953, at 0 src: 1, dest: 0, contents:   1 497 500 621
+rtupdate0 called at time 62.952759, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2301   877   2472
+dest 2|  2801   884   2493
+     3|  2922   1066   2591
+MAIN: rcv event, t=63.203, at 0 src: 2, dest: 0, contents:   3 181 192 240
+rtupdate0 called at time 63.203358, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2301   1065   2472
+dest 2|  2801   1076   2493
+     3|  2922   1316   2591
+Sending update to node 1
+Sending update to node 2
+Sending update to node 3
+MAIN: rcv event, t=63.269, at 3 src: 0, dest: 3, contents:   0 877 884 999
+rtupdate0 called at time 63.269096, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   1078
+dest 1|  884   1309
+     2|  891   1322
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=63.414, at 0 src: 3, dest: 0, contents:   7 503 506 627
+rtupdate0 called at time 63.414005, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2301   1065   3094
+dest 2|  2801   1076   3097
+     3|  2922   1316   3218
+MAIN: rcv event, t=63.457, at 1 src: 0, dest: 1, contents:   0 877 884 999
+rtupdate0 called at time 63.456627, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   1308   999
+dest 2|  999   1321   999
+     3|  999   1626   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=63.674, at 2 src: 3, dest: 2, contents:   7 238 251 309
+rtupdate0 called at time 63.674004, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1121   999   1608
+dest 2|  1366   999   1621
+     3|  1424   999   1679
+MAIN: rcv event, t=63.829, at 2 src: 0, dest: 2, contents:   0 298 313 391
+rtupdate0 called at time 63.829147, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1121   999   1608
+dest 2|  1366   999   1621
+     3|  1424   999   1679
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=64.074, at 2 src: 1, dest: 2, contents:   1 299 314 392
+rtupdate0 called at time 64.074432, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1420   999   1608
+dest 2|  1734   999   1621
+     3|  1812   999   1679
+MAIN: rcv event, t=64.194, at 2 src: 3, dest: 2, contents:   7 305 320 398
+rtupdate0 called at time 64.193878, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1420   999   1984
+dest 2|  1734   999   1999
+     3|  1812   999   2077
+MAIN: rcv event, t=64.211, at 2 src: 0, dest: 2, contents:   0 383 404 502
+rtupdate0 called at time 64.210503, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1420   999   1984
+dest 2|  1734   999   1999
+     3|  1812   999   2077
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=64.395, at 3 src: 0, dest: 3, contents:   0 999 999 999
+rtupdate0 called at time 64.395180, received packet from node 0
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   1078
+dest 1|  1006   1309
+     2|  1006   1322
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=64.961, at 0 src: 1, dest: 0, contents:   1 592 618 741
+rtupdate0 called at time 64.961357, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2893   1065   3094
+dest 2|  3511   1076   3097
+     3|  3634   1316   3218
+MAIN: rcv event, t=65.046, at 1 src: 0, dest: 1, contents:   0 999 999 999
+rtupdate0 called at time 65.045898, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   1308   999
+dest 2|  999   1321   999
+     3|  999   1626   999
+Sending update to node 0
+Sending update to node 2
+MAIN: rcv event, t=65.602, at 2 src: 1, dest: 2, contents:   1 384 405 503
+rtupdate0 called at time 65.601776, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1804   999   1984
+dest 2|  2209   999   1999
+     3|  2307   999   2077
+MAIN: rcv event, t=65.606, at 2 src: 3, dest: 2, contents:   7 390 411 509
+rtupdate0 called at time 65.606018, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1804   999   2467
+dest 2|  2209   999   2488
+     3|  2307   999   2586
+MAIN: rcv event, t=65.986, at 2 src: 0, dest: 2, contents:   0 496 499 620
+rtupdate0 called at time 65.986046, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  1804   999   2467
+dest 2|  2209   999   2488
+     3|  2307   999   2586
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=66.065, at 1 src: 2, dest: 1, contents:   3 301 316 394
+rtupdate0 called at time 66.065086, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   1622   999
+dest 2|  999   1637   999
+     3|  999   2031   999
+MAIN: rcv event, t=66.267, at 1 src: 2, dest: 1, contents:   3 386 407 505
+rtupdate0 called at time 66.266602, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   2023   999
+dest 2|  999   2044   999
+     3|  999   2549   999
+MAIN: rcv event, t=66.323, at 3 src: 2, dest: 3, contents:   3 301 316 394
+rtupdate0 called at time 66.323494, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   1325
+dest 1|  1006   1623
+     2|  1006   1638
+MAIN: rcv event, t=66.555, at 3 src: 2, dest: 3, contents:   3 386 407 505
+rtupdate0 called at time 66.555038, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   1641
+dest 1|  1006   2024
+     2|  1006   2045
+MAIN: rcv event, t=66.821, at 0 src: 3, dest: 0, contents:   7 598 624 747
+rtupdate0 called at time 66.821465, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2893   1065   3816
+dest 2|  3511   1076   3842
+     3|  3634   1316   3965
+MAIN: rcv event, t=67.061, at 2 src: 1, dest: 2, contents:   1 497 500 621
+rtupdate0 called at time 67.060509, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2301   999   2467
+dest 2|  2801   999   2488
+     3|  2922   999   2586
+MAIN: rcv event, t=67.274, at 0 src: 2, dest: 0, contents:   3 234 247 305
+rtupdate0 called at time 67.274124, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2893   1310   3816
+dest 2|  3511   1323   3842
+     3|  3634   1628   3965
+MAIN: rcv event, t=67.537, at 3 src: 2, dest: 3, contents:   3 499 502 623
+rtupdate0 called at time 67.536888, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   2048
+dest 1|  1006   2544
+     2|  1006   2547
+MAIN: rcv event, t=67.633, at 1 src: 2, dest: 1, contents:   3 499 502 623
+rtupdate0 called at time 67.632881, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   2543   999
+dest 2|  999   2546   999
+     3|  999   3169   999
+MAIN: rcv event, t=67.980, at 0 src: 1, dest: 0, contents:   1 731 736 884
+rtupdate0 called at time 67.980019, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  3624   1310   3816
+dest 2|  4360   1323   3842
+     3|  4508   1628   3965
+MAIN: rcv event, t=68.243, at 2 src: 3, dest: 2, contents:   7 503 506 627
+rtupdate0 called at time 68.242836, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2301   999   3089
+dest 2|  2801   999   3092
+     3|  2922   999   3213
+MAIN: rcv event, t=68.546, at 2 src: 0, dest: 2, contents:   0 591 617 740
+rtupdate0 called at time 68.546066, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2301   999   3089
+dest 2|  2801   999   3092
+     3|  2922   999   3213
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=69.237, at 1 src: 2, dest: 1, contents:   3 594 620 743
+rtupdate0 called at time 69.236542, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   3140   999
+dest 2|  999   3166   999
+     3|  999   3909   999
+MAIN: rcv event, t=69.612, at 2 src: 0, dest: 2, contents:   0 730 735 883
+rtupdate0 called at time 69.611740, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2301   999   3089
+dest 2|  2801   999   3092
+     3|  2922   999   3213
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=69.614, at 0 src: 3, dest: 0, contents:   7 737 742 890
+rtupdate0 called at time 69.613861, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  3624   1310   4702
+dest 2|  4360   1323   4707
+     3|  4508   1628   4855
+MAIN: rcv event, t=69.919, at 1 src: 2, dest: 1, contents:   3 733 738 886
+rtupdate0 called at time 69.919434, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   3899   999
+dest 2|  999   3904   999
+     3|  999   4790   999
+MAIN: rcv event, t=69.981, at 3 src: 2, dest: 3, contents:   3 594 620 743
+rtupdate0 called at time 69.980576, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   2550
+dest 1|  1006   3141
+     2|  1006   3167
+MAIN: rcv event, t=70.350, at 0 src: 3, dest: 0, contents:   7 884 891 999
+rtupdate0 called at time 70.350471, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  3624   1310   5739
+dest 2|  4360   1323   5746
+     3|  4508   1628   5854
+MAIN: rcv event, t=70.551, at 0 src: 1, dest: 0, contents:   1 878 885 999
+rtupdate0 called at time 70.551018, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  4502   1310   5739
+dest 2|  5387   1323   5746
+     3|  5501   1628   5854
+MAIN: rcv event, t=70.860, at 2 src: 1, dest: 2, contents:   1 592 618 741
+rtupdate0 called at time 70.860382, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2893   999   3089
+dest 2|  3511   999   3092
+     3|  3634   999   3213
+MAIN: rcv event, t=70.908, at 3 src: 2, dest: 3, contents:   3 733 738 886
+rtupdate0 called at time 70.908028, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   3170
+dest 1|  1006   3900
+     2|  1006   3905
+MAIN: rcv event, t=71.809, at 0 src: 2, dest: 0, contents:   3 301 316 394
+rtupdate0 called at time 71.809456, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  4502   1624   5739
+dest 2|  5387   1639   5746
+     3|  5501   2033   5854
+MAIN: rcv event, t=72.185, at 2 src: 3, dest: 2, contents:   7 598 624 747
+rtupdate0 called at time 72.184578, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  2893   999   3811
+dest 2|  3511   999   3837
+     3|  3634   999   3960
+MAIN: rcv event, t=72.440, at 0 src: 2, dest: 0, contents:   3 386 407 505
+rtupdate0 called at time 72.439949, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  4502   2025   5739
+dest 2|  5387   2046   5746
+     3|  5501   2551   5854
+MAIN: rcv event, t=73.678, at 2 src: 1, dest: 2, contents:   1 731 736 884
+rtupdate0 called at time 73.677528, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  3624   999   3811
+dest 2|  4360   999   3837
+     3|  4508   999   3960
+MAIN: rcv event, t=73.979, at 0 src: 3, dest: 0, contents:   7 999 999 999
+rtupdate0 called at time 73.978935, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  4502   2025   6853
+dest 2|  5387   2046   6853
+     3|  5501   2551   6853
+MAIN: rcv event, t=74.235, at 2 src: 3, dest: 2, contents:   7 737 742 890
+rtupdate0 called at time 74.235313, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  3624   999   4697
+dest 2|  4360   999   4702
+     3|  4508   999   4850
+MAIN: rcv event, t=75.260, at 2 src: 0, dest: 2, contents:   0 877 884 999
+rtupdate0 called at time 75.260429, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  3624   999   4697
+dest 2|  4360   999   4702
+     3|  4508   999   4850
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=75.276, at 0 src: 1, dest: 0, contents:   1 999 999 999
+rtupdate0 called at time 75.276154, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  5501   2025   6853
+dest 2|  6500   2046   6853
+     3|  6500   2551   6853
+MAIN: rcv event, t=75.773, at 3 src: 2, dest: 3, contents:   3 880 887 999
+rtupdate0 called at time 75.772911, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   3908
+dest 1|  1006   4785
+     2|  1006   4792
+MAIN: rcv event, t=75.822, at 0 src: 2, dest: 0, contents:   3 499 502 623
+rtupdate0 called at time 75.822014, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  5501   2545   6853
+dest 2|  6500   2548   6853
+     3|  6500   3171   6853
+MAIN: rcv event, t=76.315, at 2 src: 0, dest: 2, contents:   0 999 999 999
+rtupdate0 called at time 76.314903, received packet from node 0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  3624   999   4697
+dest 2|  4360   999   4702
+     3|  4508   999   4850
+Sending update to node 1
+Sending update to node 0
+Sending update to node 3
+MAIN: rcv event, t=76.417, at 3 src: 2, dest: 3, contents:   3 999 999 999
+rtupdate0 called at time 76.416656, received packet from node 2
+             via     
+   D3 |    0     2 
+  ----|-----------
+     0|    7   4795
+dest 1|  1006   5791
+     2|  1006   5791
+MAIN: rcv event, t=77.083, at 2 src: 3, dest: 2, contents:   7 884 891 999
+rtupdate0 called at time 77.083488, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  3624   999   5734
+dest 2|  4360   999   5741
+     3|  4508   999   5849
+MAIN: rcv event, t=77.202, at 1 src: 2, dest: 1, contents:   3 880 887 999
+rtupdate0 called at time 77.201965, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   4784   999
+dest 2|  999   4791   999
+     3|  999   5790   999
+MAIN: rcv event, t=77.736, at 0 src: 2, dest: 0, contents:   3 594 620 743
+rtupdate0 called at time 77.735970, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  5501   3142   6853
+dest 2|  6500   3168   6853
+     3|  6500   3911   6853
+MAIN: rcv event, t=78.169, at 1 src: 2, dest: 1, contents:   3 999 999 999
+rtupdate0 called at time 78.168617, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  999   5790   999
+dest 2|  999   5790   999
+     3|  999   6789   999
+MAIN: rcv event, t=78.356, at 0 src: 2, dest: 0, contents:   3 733 738 886
+rtupdate0 called at time 78.355812, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  5501   3901   6853
+dest 2|  6500   3906   6853
+     3|  6500   4792   6853
+MAIN: rcv event, t=78.801, at 2 src: 1, dest: 2, contents:   1 878 885 999
+rtupdate0 called at time 78.801155, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  4502   999   5734
+dest 2|  5387   999   5741
+     3|  5501   999   5849
+MAIN: rcv event, t=79.533, at 0 src: 2, dest: 0, contents:   3 880 887 999
+rtupdate0 called at time 79.533447, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  5501   4786   6853
+dest 2|  6500   4793   6853
+     3|  6500   5792   6853
+MAIN: rcv event, t=80.620, at 2 src: 3, dest: 2, contents:   7 999 999 999
+rtupdate0 called at time 80.620079, received packet from node 3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  4502   999   6848
+dest 2|  5387   999   6848
+     3|  5501   999   6848
+MAIN: rcv event, t=81.457, at 0 src: 2, dest: 0, contents:   3 999 999 999
+rtupdate0 called at time 81.457130, received packet from node 2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  5501   5792   6853
+dest 2|  6500   5792   6853
+     3|  6500   6791   6853
+MAIN: rcv event, t=81.742, at 2 src: 1, dest: 2, contents:   1 999 999 999
+rtupdate0 called at time 81.741821, received packet from node 1
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|  5501   999   6848
+dest 2|  6500   999   6848
+     3|  6500   999   6848
+MAIN: rcv event, t=10000.000, at -1MAIN: rcv event, t=20000.000, at 0
+Simulator terminated at t=20000.000000, no packets in medium
+(base) atal@Ubuntu:~/Desktop/CN/CN Assignment-3/q3$ 
+
