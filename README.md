@@ -6,7 +6,7 @@ This project sets up a custom network topology using Mininet with 4 switches and
 
 ---
 
-## 🔧 Setup Instructions
+### 🔧 Setup Instructions
 
 Follow the steps below to install Mininet and run the simulation script.
 
@@ -25,3 +25,13 @@ chmod +x q1_a.py
 ```bash
 sudo ./q1_a.py
 ```
+
+## Q3
+Command to run is 
+
+```bash
+gcc distance_vector.c node0.c node1.c node2.c node3.c 
+sudo ./dvrouting
+```
+
+This will give the output that I have given in the output.txt file which is printing the updated  distance table for the network 
