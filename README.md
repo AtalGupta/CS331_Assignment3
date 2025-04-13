@@ -27,7 +27,9 @@ sudo ./q1_a.py
 ```
 ## Q2
 For running 
+```bash
 sudo python3 nat_topology.py
+```
 
 ## Q3
 Command to run is 
